@@ -91,10 +91,10 @@ void Context::init()
         freopen("CONOUT$", "w", stdout);
     }
 
-    //Patches::init();
+    Patches::init();
     ModLoader::init();
-    //CodeLoader::init();
-    //FileLoader::init();
+    CodeLoader::init();
+    FileLoader::init();
     //SaveData::init();
     //StrArray::init();
     //SpriteLoader::init();
@@ -105,7 +105,7 @@ void Context::init()
 
 void Context::postInit()
 {
-    //CodeLoader::postInit();
+    CodeLoader::postInit();
     //PvLoader::init();
     //ThumbnailLoader::init();
 }
