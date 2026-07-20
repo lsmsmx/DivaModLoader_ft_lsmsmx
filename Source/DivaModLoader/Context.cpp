@@ -98,7 +98,7 @@ void Context::init()
     //SaveData::init();
     //StrArray::init();
     //SpriteLoader::init();
-    //DatabaseLoader::init();
+    DatabaseLoader::init();
 
     INSTALL_HOOK(WinMain);
 }
