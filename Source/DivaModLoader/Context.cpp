@@ -91,21 +91,21 @@ void Context::init()
         freopen("CONOUT$", "w", stdout);
     }
 
-    Patches::init();
+    //Patches::init();
     ModLoader::init();
-    CodeLoader::init();
-    FileLoader::init();
-    SaveData::init();
-    StrArray::init();
-    SpriteLoader::init();
-    DatabaseLoader::init();
+    //CodeLoader::init();
+    //FileLoader::init();
+    //SaveData::init();
+    //StrArray::init();
+    //SpriteLoader::init();
+    //DatabaseLoader::init();
 
     INSTALL_HOOK(WinMain);
 }
 
 void Context::postInit()
 {
-    CodeLoader::postInit();
-    PvLoader::init();
-    ThumbnailLoader::init();
+    //CodeLoader::postInit();
+    //PvLoader::init();
+    //ThumbnailLoader::init();
 }
