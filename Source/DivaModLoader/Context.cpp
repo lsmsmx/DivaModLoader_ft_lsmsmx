@@ -96,7 +96,7 @@ void Context::init()
     CodeLoader::init();
     FileLoader::init();
     //SaveData::init();
-    StrArray::init();
+    //StrArray::init();
     SpriteLoader::init();
     DatabaseLoader::init();
 
@@ -107,5 +107,5 @@ void Context::postInit()
 {
     CodeLoader::postInit();
     PvLoader::init();
-    ThumbnailLoader::init();
+    //ThumbnailLoader::init();
 }
