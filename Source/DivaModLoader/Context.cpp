@@ -107,5 +107,5 @@ void Context::postInit()
 {
     CodeLoader::postInit();
     PvLoader::init();
-    //ThumbnailLoader::init();
+    ThumbnailLoader::init();
 }
