@@ -91,7 +91,7 @@ void Context::init()
         freopen("CONOUT$", "w", stdout);
     }
 
-    //Patches::init();
+    Patches::init();
     ModLoader::init();
     CodeLoader::init();
     FileLoader::init();
