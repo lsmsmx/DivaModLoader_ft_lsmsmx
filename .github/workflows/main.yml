@@ -1,0 +1,29 @@
+name: Build DivaModLoader
+
+on: 
+  push:
+    branches: [ "master", "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Скачиваем исходники
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Настраиваем компилятор (MSBuild)
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Собираем плагин
+      # Компилируем проект (обратите внимание на путь к файлу .vcxproj)
+      run: msbuild Source/DivaModLoader/DivaModLoader.vcxproj /p:Configuration=Release /p:Platform=x64
+
+    - name: Сохраняем готовую DLL
+      uses: actions/upload-artifact@v4
+      with:
+        name: DivaModLoader-Build
+        path: '**/*.dll'
