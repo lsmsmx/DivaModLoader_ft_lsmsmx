@@ -80,8 +80,8 @@ void Patches::init()
     WRITE_NOP((uint8_t*)sigModuleIdLimit2() + 0xB, 4);
 
     // Remove COS limit of 498.
-    //WRITE_MEMORY(sigCosLimit1(), uint8_t, 0xEB);
-    WRITE_NOP(sigCosLimit2(), 4);
+    WRITE_MEMORY(sigCosLimit1(), uint8_t, 0xEB);
+    //WRITE_NOP(sigCosLimit2(), 4);
 
     // Remove PV DB date check.
     //WRITE_NOP(sigPvDbDateCheck(), 6);
