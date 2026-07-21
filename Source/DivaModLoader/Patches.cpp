@@ -76,13 +76,13 @@ void Patches::init()
     WRITE_MEMORY((uint8_t*)sigRomCheck2() + 0x12, uint8_t, 0xEB);
 
     // Remove module ID limit of 1035.
-    WRITE_MEMORY((uint8_t*)sigModuleIdLimit1() + 0xD, uint8_t, 0x89, 0xD0, 0xC3);
-    WRITE_NOP((uint8_t*)sigModuleIdLimit2() + 0xB, 4);
+    //WRITE_MEMORY((uint8_t*)sigModuleIdLimit1() + 0xD, uint8_t, 0x89, 0xD0, 0xC3);
+    //WRITE_NOP((uint8_t*)sigModuleIdLimit2() + 0xB, 4);
 
     // Remove COS limit of 498.
-    WRITE_MEMORY(sigCosLimit1(), uint8_t, 0xEB);
-    WRITE_NOP(sigCosLimit2(), 4);
+    //WRITE_MEMORY(sigCosLimit1(), uint8_t, 0xEB);
+    //WRITE_NOP(sigCosLimit2(), 4);
 
     // Remove PV DB date check.
-    WRITE_NOP(sigPvDbDateCheck(), 6);
+    //WRITE_NOP(sigPvDbDateCheck(), 6);
 }
