@@ -115,7 +115,7 @@ public ?implOfGetModuleName@@YAPEBDH@Z
 
     mov rdx, rbx
     call ?getCustomizeNameImp@@YAPEBDHH@Z
-    
+    mov r8, 0FFFFFFFFFFFFFFFFh
 
     mov rsp, r15
 
