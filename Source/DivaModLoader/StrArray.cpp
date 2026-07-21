@@ -244,7 +244,7 @@ void StrArray::init()
 {
     INSTALL_HOOK(LoadStrArray);
     INSTALL_HOOK(GetStr);
-    WRITE_CALL(originalGetModuleName, implOfGetModuleName);
+    //WRITE_CALL(originalGetModuleName, implOfGetModuleName);
     //WRITE_CALL(originalGetCustomizeName, implOfGetCustomizeName);
     WRITE_CALL(originalGetBtnSeName, implOfGetBtnSeName);
     WRITE_CALL(originalGetSlideSeName, implOfGetSlideSeName);
