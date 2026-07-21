@@ -95,9 +95,9 @@ void Context::init()
     ModLoader::init();
     CodeLoader::init();
     FileLoader::init();
-    SaveData::init();
+    //SaveData::init();
     StrArray::init();
-    SpriteLoader::init();
+    //SpriteLoader::init();
     DatabaseLoader::init();
 
     INSTALL_HOOK(WinMain);
@@ -106,6 +106,6 @@ void Context::init()
 void Context::postInit()
 {
     CodeLoader::postInit();
-    PvLoader::init();
-    ThumbnailLoader::init();
+    //PvLoader::init();
+    //ThumbnailLoader::init();
 }
