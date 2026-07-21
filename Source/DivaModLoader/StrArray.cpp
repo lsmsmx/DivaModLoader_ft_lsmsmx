@@ -242,7 +242,7 @@ const char* getSliderTouchSeNameImp(const int id, const int sliderTouchSeId)
 
 void StrArray::init()
 {
-    INSTALL_HOOK(LoadStrArray);
+    //INSTALL_HOOK(LoadStrArray);
     INSTALL_HOOK(GetStr);
     //WRITE_CALL(originalGetModuleName, implOfGetModuleName);
     //WRITE_CALL(originalGetCustomizeName, implOfGetCustomizeName);
